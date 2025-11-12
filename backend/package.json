@@ -6,7 +6,8 @@
     "express": "^5.1.0",
     "inngest": "^3.44.3",
     "interview-platform": "file:..",
-    "mongoose": "^8.19.1"
+    "mongoose": "^8.19.1",
+    "stream-chat": "^9.24.0"
   },
   "scripts": {
     "dev": "nodemon src/server.js",
