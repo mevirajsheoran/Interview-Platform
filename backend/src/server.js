@@ -2,8 +2,8 @@ import express from "express";
 import { ENV } from "./lib/env.js";
 import path from "path";
 import { connectDB } from "./lib/db.js";
-import cors from "cors";    
-import { serve } from "inngest/serve";
+import cors from "cors";
+import { serve } from "inngest/express";
 import { inngest, functions } from "./lib/inngest.js";
 
 const app = express();
@@ -17,7 +17,7 @@ app.use(express.json());
 //client url is the frontend url
 // credentials:true meaning?? => server allows a browser to include cookies on request
 
-app.use(cors({origin:ENV.CLIENT_URL,credentials:true}));
+app.use(cors({ origin: ENV.CLIENT_URL, credentials: true }));
 
 
 
